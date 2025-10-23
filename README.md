@@ -12,11 +12,39 @@ _To be added..._
 
 ## Tech Stack
 
-_To be added..._
+Expo
+FastAPI
 
 ## Installation
 
-_Instructions coming soon..._
+1. Install Node.js
+
+    [[https://nodejs.org/en/download]]
+
+2. Install expo CLI globally 
+
+    npm install -g expo-cli
+
+3. Navigate to SpineTracker project folder
+
+    cd SPINETRACKER
+
+4. Install all project dependencies
+
+    npm install 
+
+5.  Start Expo development server
+
+    npx expo start 
+
+6. Run the app 
+
+    *Scan the QR code with Expo Go app on your phone, or 
+
+    * Press "i" to launch an IOS simulator, or
+
+    * Press "a" to launch on Android emulator 
+
 
 ## Usage
 

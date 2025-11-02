@@ -52,8 +52,8 @@ _Instructions coming soon..._
 
 ## Contributing
 
-Contributions are welcome once the project structure is finalized. Stay tuned for guidelines.
+Contributions are limited to employees of Quantum Shell. 
 
 ## License
 
-License information will be provided later.
+All Rights Reserved 

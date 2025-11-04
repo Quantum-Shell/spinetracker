@@ -1,5 +1,4 @@
-import { Tabs, Slot, useRouter } from 'expo-router';
-import { useEffect } from "react";
+import { Tabs } from 'expo-router';
 // eventually check sotred auth token 
 
 import Ionicons from '@expo/vector-icons/Ionicons';

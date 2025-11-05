@@ -1,9 +1,9 @@
 import { Text, View, StyleSheet } from 'react-native';
 
-export default function LoginScreen() {
+export default function Index() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>We Login Here!</Text>
+      <Text style={styles.text}>Home of the Screen!</Text>
     </View>
   );
 }
@@ -24,3 +24,5 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
 });
+
+

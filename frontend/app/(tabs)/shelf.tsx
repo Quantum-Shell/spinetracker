@@ -3,7 +3,7 @@ import { Text, View, StyleSheet } from 'react-native';
 export default function TrackerScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>We track things here</Text>
+      <Text style={styles.text}>This is our shelf!</Text>
     </View>
   );
 }

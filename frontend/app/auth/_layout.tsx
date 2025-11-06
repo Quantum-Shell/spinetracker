@@ -1,14 +1,17 @@
-// app/auth/_layout.tsx
 import { Stack } from "expo-router";
-import { View, Text } from "react-native";
 
 export default function AuthLayout() {
   return (
-    <>
-      <Stack screenOptions={{ headerShown: false }} />
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-        <Text style={{ color: "white" }}>Auth Layout is loading!</Text>
-      </View>
-    </>
+    <Stack 
+      screenOptions={{ 
+        headerShown: false,
+        animation: 'slide_from_right'
+      }}
+      initialRouteName="index"
+    >
+      <Stack.Screen name="index" />
+      <Stack.Screen name="signup" />
+      <Stack.Screen name="forgot-password" />
+    </Stack>
   );
 }

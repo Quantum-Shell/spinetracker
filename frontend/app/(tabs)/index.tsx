@@ -1,9 +1,9 @@
 import { Text, View, StyleSheet } from 'react-native';
 
-export default function TrackerScreen() {
+export default function Index() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>We track things here</Text>
+      <Text style={styles.text}>Home of the Screen!</Text>
     </View>
   );
 }
@@ -12,10 +12,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#25292e',
-    justifyContent: 'center',
     alignItems: 'center',
+    justifyContent: 'center',
   },
   text: {
     color: '#fff',
   },
+  button: {
+    fontSize: 20,
+    textDecorationLine: 'underline',
+    color: '#fff',
+  },
 });
+
+

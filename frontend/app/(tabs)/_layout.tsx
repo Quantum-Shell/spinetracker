@@ -1,5 +1,4 @@
-import { Tabs, Slot, useRouter } from 'expo-router';
-import { useEffect } from "react";
+import { Tabs } from 'expo-router';
 // eventually check sotred auth token 
 
 import Ionicons from '@expo/vector-icons/Ionicons';
@@ -23,16 +22,16 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Shelf',
+          title: 'Home',
           tabBarIcon: ({ color, focused }) => (
             <Ionicons name={focused ? 'library-sharp' : 'library-outline'} color={color} size={24} />
           ),
         }}
       />
       <Tabs.Screen
-        name="tracker"
+        name="shelf"
         options={{
-          title: 'Tracker',
+          title: 'Shelf',
           tabBarIcon: ({ color, focused }) => (
             <Ionicons name={focused ? 'stats-chart' : 'stats-chart-outline'} color={color} size={24} />
 

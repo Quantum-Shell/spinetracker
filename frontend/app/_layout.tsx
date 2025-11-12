@@ -4,16 +4,16 @@ import { View, ActivityIndicator } from 'react-native';
 
 export default function RootLayout() {
   const [isLoading, setIsLoading] = useState(true);
-  const [isSignedIn, setIsSignedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  console.log('1. Component rendered, isLoading:', isLoading, 'isSignedIn:', isSignedIn);
+  console.log('1. Component rendered, isLoading:', isLoading, 'isLoggedIn:', isLoggedIn);
 
   useEffect(() => {
     console.log('2. useEffect running');
     // Simulate checking local storage
     setTimeout(() => {
       console.log('3. Timer callback - about to set states');
-      setIsSignedIn(false);
+      setIsLoggedIn(false);
       setIsLoading(false);
       console.log('4. States should be updated');
     }, 1000);
@@ -28,26 +28,20 @@ export default function RootLayout() {
     );
   }
 
-  console.log('5b. Rendering main layout, isSignedIn:', isSignedIn);
+  
+
+  console.log('5b. Rendering main layout, isLoggedIn:', isLoggedIn);
   return (
-    <Stack screenOptions={{ headerShown: false }}>
-      {isSignedIn ? (
-        <Stack.Screen 
-          name="(tabs)"
-          options={{
-            headerBackVisible: false,
-            gestureEnabled: false
-          }}
-        />
-      ) : (
-        <Stack.Screen 
-          name="auth"
-          options={{
-            headerBackVisible: false,
-            gestureEnabled: false
-          }}
-        />
-      )}
+    <Stack>
+      <Stack.Protected guard={isLoggedIn}>
+        <Stack.Screen name="(protected" />
+      </Stack.Protected>
+
+      <Stack.Protected guard={!isLoggedIn}>
+        <Stack.Screen name="login" />
+        <Stack.Screen name="signup" />
+        <Stack.Screen name="forgot-password" />
+      </Stack.Protected>
     </Stack>
   );
 }

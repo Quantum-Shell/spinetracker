@@ -7,9 +7,9 @@ export default function AuthLayout() {
         headerShown: false,
         animation: 'slide_from_right'
       }}
-      initialRouteName="index"
+      initialRouteName="login"
     >
-      <Stack.Screen name="index" />
+      <Stack.Screen name="login" />
       <Stack.Screen name="signup" />
       <Stack.Screen name="forgot-password" />
     </Stack>

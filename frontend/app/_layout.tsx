@@ -1,4 +1,4 @@
-import { Stack } from 'expo-router';
+import { Stack, usePathname } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { View, ActivityIndicator } from 'react-native';
 
@@ -6,17 +6,15 @@ export default function RootLayout() {
   const [isLoading, setIsLoading] = useState(true);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  console.log('1. Component rendered, isLoading:', isLoading, 'isLoggedIn:', isLoggedIn);
+  // 👇 Add this here
+  const pathname = usePathname();
+  console.log("🔍 Current route:", pathname);
 
   useEffect(() => {
     console.log('2. useEffect running');
-    // Simulate checking local storage
-    setTimeout(() => {
-      console.log('3. Timer callback - about to set states');
-      setIsLoggedIn(false);
-      setIsLoading(false);
-      console.log('4. States should be updated');
-    }, 1000);
+    setIsLoggedIn(false);
+    setIsLoading(false);
+    console.log('4. States should be updated');
   }, []);
 
   if (isLoading) {
@@ -28,19 +26,15 @@ export default function RootLayout() {
     );
   }
 
-  
-
   console.log('5b. Rendering main layout, isLoggedIn:', isLoggedIn);
   return (
     <Stack>
       <Stack.Protected guard={isLoggedIn}>
-        <Stack.Screen name="(protected" />
+        <Stack.Screen name="(protected)" />
       </Stack.Protected>
 
       <Stack.Protected guard={!isLoggedIn}>
-        <Stack.Screen name="login" />
-        <Stack.Screen name="signup" />
-        <Stack.Screen name="forgot-password" />
+        <Stack.Screen name="auth" />
       </Stack.Protected>
     </Stack>
   );

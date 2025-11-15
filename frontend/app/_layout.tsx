@@ -28,7 +28,7 @@ export default function RootLayout() {
 
   console.log('5b. Rendering main layout, isLoggedIn:', isLoggedIn);
   return (
-    <Stack>
+    <Stack screenOptions={{ headerShown: false }}>
       <Stack.Protected guard={isLoggedIn}>
         <Stack.Screen name="(protected)" />
       </Stack.Protected>

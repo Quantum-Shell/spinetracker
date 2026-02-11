@@ -1,0 +1,13 @@
+/home/turtlewake/spinetracker/build/linux/x64/debug/bundle/spinetracker
+/home/turtlewake/spinetracker/build/linux/x64/debug/bundle/data/icudtl.dat
+/home/turtlewake/spinetracker/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/home/turtlewake/spinetracker/build/linux/x64/debug/bundle/data/flutter_assets/shaders/ink_sparkle.frag
+/home/turtlewake/spinetracker/build/linux/x64/debug/bundle/data/flutter_assets/shaders/stretch_effect.frag
+/home/turtlewake/spinetracker/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.bin
+/home/turtlewake/spinetracker/build/linux/x64/debug/bundle/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+/home/turtlewake/spinetracker/build/linux/x64/debug/bundle/data/flutter_assets/version.json
+/home/turtlewake/spinetracker/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json
+/home/turtlewake/spinetracker/build/linux/x64/debug/bundle/data/flutter_assets/kernel_blob.bin
+/home/turtlewake/spinetracker/build/linux/x64/debug/bundle/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+/home/turtlewake/spinetracker/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
+/home/turtlewake/spinetracker/build/linux/x64/debug/bundle/data/flutter_assets/NativeAssetsManifest.json
